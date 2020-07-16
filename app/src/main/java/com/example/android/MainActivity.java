@@ -21,5 +21,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        findViewById(R.id.rounded_Bitmap).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,RoundedBitmapDrawableActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
